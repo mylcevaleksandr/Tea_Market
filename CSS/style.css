@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+.animate__lightSpeedInRight, .animate__lightSpeedInLeft {
+    --animate-duration: 3s;
+}
+
+.slider {
+    position: relative;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 3 !important;
+    font-size: 0;
+    width: 40px;
+    height: 39px;
+    border: 0;
+}
+
+.slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url("../images/prev.svg") 0 0 / 100% repeat;
+    margin-left: 20px;
+}
+
+.slider .slick-arrow.slick-next {
+    right: 0;
+    background: url("../images/next.svg") 0 0 / 100% repeat;
+    margin-right: 20px;
+}
+
+#accordion {
+    position: relative;
+}
+
+#accordion .ui-accordion-header-icon {
+    content: '';
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/next_3.svg") 0 0 / 100% repeat;
+}
+
+#accordion .ui-accordion-header-active .ui-accordion-header-icon {
+    background-image: url("../images/next_2.svg");
+}
